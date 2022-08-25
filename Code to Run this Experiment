@@ -1,0 +1,27 @@
+#include <Servo.h> // Include the Servo library
+
+int servoPin = 5; // Declare the Servo pin
+
+Servo Servo1; // Create a servo object
+
+void setup() {
+
+Servo1.attach(servoPin); // We need to attach the servo to the used pin number
+
+}
+
+void loop(){
+
+Servo1.write(0); // Make servo go to 0 degrees
+
+delay(1000);
+
+Servo1.write(90); // Make servo go to 90 degrees
+
+delay(1000);
+
+Servo1.write(180); // Make servo go to 180 degrees
+
+delay(1000);
+
+}
